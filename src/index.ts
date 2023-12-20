@@ -20,4 +20,4 @@ import console from 'node:console';
 
 console.log('Welcome to my script!');
 
-process.exit(1);
+process.exit(0);
