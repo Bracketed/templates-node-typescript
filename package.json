@@ -1,6 +1,6 @@
 {
 	"name": "@ninjaninja140/node-ts-template",
-	"packageManager": "yarn@4.7.0",
+	"packageManager": "yarn@4.9.2",
 	"version": "1.0.0",
 	"repository": "https://github.com/ninjaninja140/templates-node-typescript",
 	"author": {
@@ -19,15 +19,20 @@
 		"validate:all": "yarn prettier --check .",
 		"start": "yarn node ./dist/index.js",
 		"test": "yarn tsx watch ./src/index.ts",
-		"compile": "yarn tsc",
+		"compile": "yarn tsup",
 		"build": "docker compose build",
 		"up": "docker compose -f compose.yml up -d"
 	},
 	"devDependencies": {
 		"@bracketed/typescript-config": "^4.4.0",
-		"@types/node": "^22.13.11",
+		"@types/node": "^24.0.2",
 		"prettier": "^3.5.3",
-		"tsx": "^4.19.3",
-		"typescript": "^5.8.2"
+		"tsx": "^4.20.3",
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"esbuild-plugin-file-path-extensions": "^2.1.4",
+		"esbuild-plugin-version-injector": "^1.2.1",
+		"tsup": "^8.5.0"
 	}
 }
