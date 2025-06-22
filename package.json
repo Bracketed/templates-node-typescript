@@ -9,9 +9,6 @@
 	},
 	"main": "dist/index.js",
 	"type": "module",
-	"imports": {
-		"#root/*": "./dist/*.js"
-	},
 	"scripts": {
 		"lint": "yarn prettier --write src/**/*.ts",
 		"validate": "yarn prettier --check src/**/*.ts",
@@ -21,17 +18,16 @@
 		"test": "yarn tsx watch ./src/index.ts",
 		"compile": "yarn tsup",
 		"build": "docker compose build",
-		"up": "docker compose -f compose.yml up -d"
+		"up": "docker compose -f compose.yml up -d",
+		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
-		"@bracketed/typescript-config": "^4.4.0",
-		"@swc/core": "^1.12.1",
-		"@types/node": "^24.0.2",
-		"esbuild-plugin-file-path-extensions": "^2.1.4",
-		"esbuild-plugin-version-injector": "^1.2.1",
+		"@bracketed/tsup-configuration": "^1.0.1",
+		"@bracketed/typescript-config": "^4.7.0",
+		"@swc/core": "^1.12.5",
+		"@types/node": "^24.0.3",
 		"prettier": "^3.5.3",
 		"tsup": "^8.5.0",
-		"tsx": "^4.20.3",
 		"typescript": "^5.8.3"
 	}
 }
