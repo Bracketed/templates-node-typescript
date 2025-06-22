@@ -15,7 +15,6 @@
 		"lint:all": "yarn prettier --write .",
 		"validate:all": "yarn prettier --check .",
 		"start": "yarn node ./dist/index.js",
-		"test": "yarn tsx watch ./src/index.ts",
 		"compile": "yarn tsup",
 		"build": "docker compose build",
 		"up": "docker compose -f compose.yml up -d",
