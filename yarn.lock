@@ -5,9 +5,9 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@bracketed/tsup-configuration@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "@bracketed/tsup-configuration@npm:1.0.1"
+"@bracketed/tsup-configuration@npm:^1.0.5":
+  version: 1.0.5
+  resolution: "@bracketed/tsup-configuration@npm:1.0.5"
   dependencies:
     esbuild: "npm:^0.25.5"
     esbuild-fix-imports-plugin: "npm:^1.0.21"
@@ -16,14 +16,14 @@ __metadata:
     esbuild-plugin-version-injector: "npm:^1.2.1"
     tslib: "npm:^2.8.1"
     tsup: "npm:^8.5.0"
-  checksum: 10c0/c7c541a5d33e82c023ebe9f7388b31bafaecee3141862428d7c381fb501f22afede3c8a495670a16d00daa1a0b4d77acee102b8cf737ac8a26fb5ae03f2e2e47
+  checksum: 10c0/290db2da2e5a3ed35f14ffa7aafef10067470e4fab21cae3e656a274116fab3fc996a0e156a6ac0948aab0344c43c810a0473a047e3f3f2ab1a1fcfd5add4bc1
   languageName: node
   linkType: hard
 
-"@bracketed/typescript-config@npm:^4.7.0":
-  version: 4.7.0
-  resolution: "@bracketed/typescript-config@npm:4.7.0"
-  checksum: 10c0/4c9e59f78ffe4cca8f0011cbd15c5a69520efe592a5fbce81f7d4aa46fc6a290c2c1891ac2fcb5294cd4b5417c529122bc9d547d52e04038503606eba85bd133
+"@bracketed/typescript-config@npm:^4.7.1":
+  version: 4.7.1
+  resolution: "@bracketed/typescript-config@npm:4.7.1"
+  checksum: 10c0/a307c144c2fa92cb4af08d8e7001dfc7326cea524aba28e63f29c9457615a31f55e166e44b978041edab0cb2f4caec0e1cd4d8b095c2e6ccfad643a42b6e774f
   languageName: node
   linkType: hard
 
@@ -262,8 +262,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@ninjaninja140/node-ts-template@workspace:."
   dependencies:
-    "@bracketed/tsup-configuration": "npm:^1.0.1"
-    "@bracketed/typescript-config": "npm:^4.7.0"
+    "@bracketed/tsup-configuration": "npm:^1.0.5"
+    "@bracketed/typescript-config": "npm:^4.7.1"
     "@swc/core": "npm:^1.12.5"
     "@types/node": "npm:^24.0.3"
     prettier: "npm:^3.5.3"
