@@ -1,31 +1,32 @@
 {
 	"name": "@ninjaninja140/node-ts-template",
-	"packageManager": "yarn@4.9.2",
+	"packageManager": "yarn@4.12.0",
 	"version": "1.0.0",
 	"repository": "https://github.com/ninjaninja140/templates-node-typescript",
 	"author": {
 		"name": "ninjaninja140",
 		"url": "https://github.com/ninjaninja140"
 	},
-	"main": "dist/index.js",
+	"main": "dist/Entrypoint.mjs",
 	"scripts": {
-		"lint": "yarn prettier --write src/**/*.ts",
-		"validate": "yarn prettier --check src/**/*.ts",
-		"lint:all": "yarn prettier --write .",
-		"validate:all": "yarn prettier --check .",
-		"start": "yarn node ./dist/index.js",
-		"compile": "yarn tsup",
-		"build": "docker compose build",
-		"up": "docker compose -f compose.yml up -d",
+		"start": "node ./dist/Entrypoint.mjs",
+		"build": "tsup",
 		"update": "yarn upgrade-interactive"
 	},
 	"devDependencies": {
+		"@biomejs/biome": "^2.3.11",
 		"@bracketed/tsup-configuration": "^1.0.5",
 		"@bracketed/typescript-config": "^4.7.1",
-		"@swc/core": "^1.12.5",
-		"@types/node": "^24.0.3",
-		"prettier": "^3.5.3",
-		"tsup": "^8.5.0",
-		"typescript": "^5.8.3"
+		"@swc/core": "^1.15.8",
+		"@types/node": "^25.0.3",
+		"esbuild": "^0.27.2",
+		"esbuild-fix-imports-plugin": "^1.0.23",
+		"esbuild-plugin-copy": "^2.1.1",
+		"esbuild-plugin-file-path-extensions": "^2.1.4",
+		"esbuild-plugin-version-injector": "^1.2.1",
+		"tsc-alias": "^1.8.16",
+		"tsconfig-paths": "^4.2.0",
+		"tsup": "^8.5.1",
+		"typescript": "^5.9.3"
 	}
 }

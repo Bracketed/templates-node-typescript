@@ -2,10 +2,14 @@
 	"extends": ["@bracketed/typescript-config/tsup-strict"],
 	"compilerOptions": {
 		"incremental": false,
+		"moduleResolution": "Bundler",
 		"module": "ESNext",
-		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src/*"]
+		},
 		"rootDir": "./src",
-		"outDir": "./dist"
+		"outDir": "./dist",
+		"jsx": "react-jsx"
 	},
 	"include": ["src"],
 	"exclude": ["dist", "node_modules", "tsup.config.ts"]
