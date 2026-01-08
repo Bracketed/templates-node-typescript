@@ -6,6 +6,15 @@ COPY --chown=node:node src/ src/
 COPY --chown=node:node yarn.lock .
 COPY --chown=node:node package.json .
 COPY --chown=node:node .yarnrc.yml .
+COPY --chown=node:node .gitmodules .
+
+RUN apt-get update -y && \
+    apt-get install -y git
+
+RUN git config --global --add safe.directory /usr/src/app
+RUN git init
+RUN git submodule init
+RUN git submodule update
 
 FROM base AS builder
 COPY --chown=node:node tsconfig.json tsconfig.json
